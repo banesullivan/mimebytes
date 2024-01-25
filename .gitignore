@@ -1,0 +1,14 @@
+.vscode/
+*.pyc
+*.egg-info
+dist/
+build/
+**/.DS_Store
+.coverage
+.coverage*
+htmlcov
+
+.pytest_cache
+.ipynb_checkpoints
+bin/
+Untitled*.ipynb
