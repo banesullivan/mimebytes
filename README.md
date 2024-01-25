@@ -10,4 +10,4 @@ with open('image.png', 'rb') as f:
 ImageBytes(content, 'image/png')
 ```
 
-![preview](./image.png)
+![preview](https://raw.githubusercontent.com/banesullivan/mimebytes/main/jupyter.png)

@@ -4,7 +4,7 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = "mimebytes"
-version = "0.0.1"
+version = "0.1.0"
 description = "Wrapper class to make repr of bytes better in ipython."
 readme = "README.md"
 authors = [
