@@ -1,6 +1,6 @@
 # mimebytes
 
-- A thin wrapper of `bytes` to make the repr better in ipython
+- Make repr of `bytes` better in ipython
 - Rich outputs in Jupyter using `_repr_png_` and `_repr_jpeg_`
 
 ```py
@@ -17,7 +17,8 @@ Out[3]: <class 'mimebytes.image.ImageBytes'><376151> (image/png)
 
 ## Why?
 
-Have you ever tried to output a bytes object in ipython and seen a garbeled mess like the following? If so, then this is for you.
+Have you ever tried to output a bytes object in ipython and seen a garbled mess
+like the following? *If so, then this is for you.*
 
 ```py
 In [1]: with open('image.png', 'rb') as f:
