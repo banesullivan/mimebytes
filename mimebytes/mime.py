@@ -12,5 +12,5 @@ class MimeBytes(bytes):
 
     def __repr__(self):
         if self.mimetype:
-            return f"{self.__class__}<{len(self)}> ({self.mimetype})"
-        return f"{self.__class__}<{len(self)}> (un-mimed)"
+            return f"{self.__class__.__name__}<{len(self)}> ({self.mimetype})"
+        return f"{self.__class__.__name__}<{len(self)}> (un-mimed)"

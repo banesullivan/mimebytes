@@ -3,14 +3,14 @@
 - Make repr of `bytes` better in ipython
 - Rich outputs in Jupyter using `_repr_png_` and `_repr_jpeg_`
 
-```py
+```ipython
 In [1]: from mimebytes import ImageBytes
 
 In [2]: with open('image.png', 'rb') as f:
    ...:     content = f.read()
 
 In [3]: ImageBytes(content, 'image/png')
-Out[3]: <class 'mimebytes.image.ImageBytes'><376151> (image/png)
+Out[3]: ImageBytes<376151> (image/png)
 ```
 
 ![preview](https://raw.githubusercontent.com/banesullivan/mimebytes/main/jupyter.png)
@@ -20,7 +20,7 @@ Out[3]: <class 'mimebytes.image.ImageBytes'><376151> (image/png)
 Have you ever tried to output a bytes object in ipython and seen a garbled mess
 like the following? *If so, then this is for you.*
 
-```py
+```ipython
 In [1]: with open('image.png', 'rb') as f:
    ...:     content = f.read()
    ...:
