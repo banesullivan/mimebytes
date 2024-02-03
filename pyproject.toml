@@ -4,8 +4,8 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = "mimebytes"
-version = "0.1.1"
-description = "Make repr of bytes better in ipython"
+version = "0.2.0"
+description = "Make repr of bytes better in IPython"
 readme = "README.md"
 authors = [
     {name = "Bane Sullivan", email = "hello@banesullivan.com"},
@@ -23,6 +23,11 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 requires-python = '>=3.8'
+
+[project.optional-dependencies]
+magic = [
+    "python-magic",
+]
 
 [project.urls]
 "Bug Tracker" = 'https://github.com/banesullivan/mimebytes/issues'

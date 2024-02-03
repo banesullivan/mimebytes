@@ -3,17 +3,30 @@
 - Make repr of `bytes` better in ipython
 - Rich outputs in Jupyter using `_repr_png_` and `_repr_jpeg_`
 
-```ipython
-In [1]: from mimebytes import ImageBytes
+```python
+In [1]: from mimebytes import mime
 
 In [2]: with open('image.png', 'rb') as f:
    ...:     content = f.read()
 
-In [3]: ImageBytes(content, 'image/png')
-Out[3]: ImageBytes<376151> (image/png)
+In [3]: mime(content, 'image/png')
+Out[3]: PNGBytes<376151> (image/png)
 ```
 
 ![preview](https://raw.githubusercontent.com/banesullivan/mimebytes/main/jupyter.png)
+
+If [`python-magic`](https://pypi.org/project/python-magic/) is installed,
+you do not need to specify the mimetype as it will be autodetected.
+
+```python
+In [1]: from mimebytes import mime
+
+In [2]: with open('image.png', 'rb') as f:
+   ...:     content = f.read()
+
+In [3]: mime(content)
+Out[3]: PNGBytes<376151> (image/png)
+```
 
 ## Why?
 
